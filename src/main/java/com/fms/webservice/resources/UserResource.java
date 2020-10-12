@@ -10,9 +10,9 @@ import com.fms.webservice.entities.User;
 @RestController
 @RequestMapping(value = "/users")
 public class UserResource {
-	
+
 	@GetMapping
-	public ResponseEntity<User> findAll(){
+	public ResponseEntity<User> findAll() {
 		User u = new User(1L, "Felipe", "felsimoes@gmail.com", "88888888", "123456");
 		return ResponseEntity.ok().body(u);
 	}
